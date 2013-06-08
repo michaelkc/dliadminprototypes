@@ -1,0 +1,16 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+<div>
+    
+    @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    @Html.TextBox("UserName")
+    <input type="submit" value="Search" />
+}
+</div>

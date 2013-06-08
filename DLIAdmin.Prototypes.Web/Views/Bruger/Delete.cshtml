@@ -1,0 +1,656 @@
+﻿        @model DLIAdmin.Prototypes.Web.Models.Bruger
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Bruger</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ADLogonname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ADLogonname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ADGuid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ADGuid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ADIdent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ADIdent)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PrimaeradresseID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PrimaeradresseID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PrimaertForeningsnr)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PrimaertForeningsnr)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UrlStortBillede)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UrlStortBillede)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UrlLilleBillede)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UrlLilleBillede)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Specialiteter)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Specialiteter)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Praesentation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Praesentation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Sortering)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sortering)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TitelUK)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TitelUK)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VisPrivateOplysninger)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VisPrivateOplysninger)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HjemmeadresseID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HjemmeadresseID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Hjemmetelefon)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Hjemmetelefon)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HjemmeFax)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HjemmeFax)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Hjemmemobil)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Hjemmemobil)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HjemmeEmail)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HjemmeEmail)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LinkTilCV)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LinkTilCV)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ArbejdsomraaderID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ArbejdsomraaderID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntaMalkekoeer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntaMalkekoeer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalAmmekoeer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalAmmekoeer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalMindreDyr)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalMindreDyr)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalAndetKvaeg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalAndetKvaeg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalSoeer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalSoeer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalSlagtekvaeg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalSlagtekvaeg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalSlagtesvin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalSlagtesvin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Ejendomsvaerdi)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ejendomsvaerdi)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ArealInklForpagtning)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ArealInklForpagtning)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ArealTilBortforpagtet)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ArealTilBortforpagtet)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Oekolog)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Oekolog)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Planteavl)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Planteavl)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Kvaegavl)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kvaegavl)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Svineavl)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Svineavl)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CHRNummer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CHRNummer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Heltidslandmand)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Heltidslandmand)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Foedselsaar)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Foedselsaar)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Produktionsform)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Produktionsform)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FastansatMedhjaelp)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FastansatMedhjaelp)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AarligOmsaetning)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AarligOmsaetning)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HektarDrevet)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HektarDrevet)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalAarssoeer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalAarssoeer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalDyreenhedeIOevrigt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalDyreenhedeIOevrigt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerVaarbyg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerVaarbyg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerVaarhvede)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerVaarhvede)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerVaarraps)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerVaarraps)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerHavre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerHavre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerTriticale)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerTriticale)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerVinterbyg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerVinterbyg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerVinterhvede)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerVinterhvede)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerRug)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerRug)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerVinterraps)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerVinterraps)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerMarkaert)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerMarkaert)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerFroeafgroeder)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerFroeafgroeder)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerSukkerroer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerSukkerroer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerFoderroer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerFoderroer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerMajs)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerMajs)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerKloeverOgSlaetgraes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerKloeverOgSlaetgraes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Koordinat1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Koordinat1)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Koordinat2)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Koordinat2)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Koordinat3)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Koordinat3)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Ajourini)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ajourini)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Ajourtid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ajourtid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Navisiontid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Navisiontid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Kodeord)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Kodeord)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VisFotoPaaInternettet)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VisFotoPaaInternettet)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalPelsdyr)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalPelsdyr)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalHoens)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalHoens)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalKyllinger)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalKyllinger)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalSheep)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalSheep)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AntalHeste)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AntalHeste)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerKartofler)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerKartofler)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerGroentsager)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerGroentsager)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DyrkerFrugt)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DyrkerFrugt)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SidsteLogon)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SidsteLogon)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SidsteKodeordsskift)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SidsteKodeordsskift)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ADPath)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ADPath)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Telefon)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Telefon)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Fax)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fax)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CVR)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CVR)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CPR)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CPR)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LeveringsAdresseID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LeveringsAdresseID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mobil)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mobil)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Culture.Land)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Culture.Land)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mastervedligehold)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mastervedligehold)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Slettet)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Slettet)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Firmanavn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Firmanavn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Note)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Note)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Initialer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Initialer)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SenesteDataLeverandoer)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SenesteDataLeverandoer)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

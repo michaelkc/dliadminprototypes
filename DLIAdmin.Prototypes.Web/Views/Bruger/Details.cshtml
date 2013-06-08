@@ -1,0 +1,80 @@
+﻿@model DLIAdmin.Prototypes.Web.Models.ViewModels.BrugerDetailViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Systemtilstand</legend>
+    <div class="display-field">
+        @if (Model.DegradedMode)
+        {
+            <b>Degraded mode</b>
+        }
+        else
+        {
+            <b>Normal drift</b>   
+        }
+    </div>
+    <div>
+        <table>
+            <tr><th>Time</th><th>Managed threadid</th><th>Step</th></tr>
+            @foreach (var timing in Model.Timings)
+            {
+                <tr><td>@timing.Item1 ms</td><td>@timing.Item2</td><td>@timing.Item3</td></tr>    
+            }   
+        </table>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Bruger</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.User.ADLogonname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.User.ADLogonname)
+    </div>
+    <div class="display-label">
+         Navn
+    </div>
+    <div class="display-field">
+        @Model.AdUser.Name
+    </div>
+
+</fieldset>
+<fieldset>
+    <legend>Portalservices</legend>
+    @foreach (var portalService in Model.PortalServices.PortalService)
+    {
+    <div class="display-label">
+         @portalService.Name
+    </div>
+    }
+</fieldset>
+<fieldset>
+    <legend>Subscriptions</legend>
+    @foreach (var subscription in Model.Subscriptions)
+    {
+        <div class="display-label">
+            @subscription.Vare.Beskrivelse
+        </div>
+    }
+</fieldset>
+<fieldset>
+    <legend>Relations</legend>
+    @foreach (var relation in Model.Relations)
+    {
+    <div class="display-label">
+         @relation.Ajourtid
+    </div>
+    }
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.User.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

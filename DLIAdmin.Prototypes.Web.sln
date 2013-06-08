@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLIAdmin.Prototypes.Web", "DLIAdmin.Prototypes.Web\DLIAdmin.Prototypes.Web.csproj", "{1E1C3980-94E9-48AB-95D9-15EC84C2FC52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLIAdmin.Prototypes.Tests", "DLIAdmin.Prototypes.Tests\DLIAdmin.Prototypes.Tests.csproj", "{B0AF0FC9-88A4-4823-B243-5F66190F61C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLIAdmin.Prototypes.ServiceApi", "DLIAdmin.Prototypes.ServiceApi\DLIAdmin.Prototypes.ServiceApi.csproj", "{D2F90809-3281-4E3C-B18E-AF9587CD76F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C56BD7DB-539A-4728-941F-5D6947C99919}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://michaelkc.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DLIAdmin.Prototypes.Web\\DLIAdmin.Prototypes.Web.csproj
+		SccProjectName1 = DLIAdmin.Prototypes.Web
+		SccLocalPath1 = DLIAdmin.Prototypes.Web
+		SccProjectUniqueName2 = DLIAdmin.Prototypes.Tests\\DLIAdmin.Prototypes.Tests.csproj
+		SccProjectName2 = DLIAdmin.Prototypes.Tests
+		SccLocalPath2 = DLIAdmin.Prototypes.Tests
+		SccProjectUniqueName3 = DLIAdmin.Prototypes.ServiceApi\\DLIAdmin.Prototypes.ServiceApi.csproj
+		SccProjectName3 = DLIAdmin.Prototypes.ServiceApi
+		SccLocalPath3 = DLIAdmin.Prototypes.ServiceApi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E1C3980-94E9-48AB-95D9-15EC84C2FC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1C3980-94E9-48AB-95D9-15EC84C2FC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1C3980-94E9-48AB-95D9-15EC84C2FC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1C3980-94E9-48AB-95D9-15EC84C2FC52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AF0FC9-88A4-4823-B243-5F66190F61C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AF0FC9-88A4-4823-B243-5F66190F61C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AF0FC9-88A4-4823-B243-5F66190F61C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AF0FC9-88A4-4823-B243-5F66190F61C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F90809-3281-4E3C-B18E-AF9587CD76F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F90809-3281-4E3C-B18E-AF9587CD76F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F90809-3281-4E3C-B18E-AF9587CD76F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F90809-3281-4E3C-B18E-AF9587CD76F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

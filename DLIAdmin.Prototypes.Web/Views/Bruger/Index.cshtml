@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DLIAdmin.Prototypes.Web.Models.Bruger>
+
+@{
+    ViewBag.Title = "Index";
+}
+<p>
+    Søg efter bruger
+    @using (@Html.BeginForm())
+    {
+        @Html.TextBox("query");
+    }
+</p>
+
+@if (Model != null)
+{
+    @Html.Partial("~/Views/List/Index.cshtml", Model)
+}
